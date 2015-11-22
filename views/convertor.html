@@ -1,0 +1,24 @@
+ <div class="row" >
+                  <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+                      <div class="thumbnail z-depth-3 mtb_100">
+                              <img class="img-responsive" src="images/iphone.jpg">
+                              <div class="caption">
+                                <h5>iPhone 6 plus</h5>
+                                  <form class="col s12">
+                                      <div class="row">
+                                        <div class="input-field col s6">
+                                          <select class="browser-default" ng-model="toType" ng-change="calcPrice()" ng-options="key for (key, value) in rates track by value">
+                                              
+                                          </select>
+                                        </div>
+                                        <div class="input-field col s6">
+                                          <input type="number" min="1" ng-model="baseQty"  ng-change="calcPrice()" class="validate">
+                                        </div>
+                                      </div>
+                                  </form>
+                                <p><a href="javascript:;" class="btn btn-primary" ng-model="basePrice" role="button">Price : {{ basePrice | number:2 }} in {{ curSymbol }}</a> </p>
+                              </div>
+                            </div>
+                      
+                  </div>
+              </div>
